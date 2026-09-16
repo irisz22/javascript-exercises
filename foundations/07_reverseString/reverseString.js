@@ -3,6 +3,7 @@ const reverseString = function(string) {
     arr.reverse()
     return arr.join("");
 
+    // return string.split("").reverse().join("");
 };
 
 // Do not edit below this line

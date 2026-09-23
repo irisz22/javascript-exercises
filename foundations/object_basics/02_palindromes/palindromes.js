@@ -1,6 +1,7 @@
 const palindromes = function (myStr) {
     myStr = myStr.toLowerCase();
     const filterStr = (str) => str.replace(/[^a-zA-Z0-9]/g, "");
+    // removed anything that's not alphanumeric from string using Regex
 
     let newStr = filterStr(myStr);
     let strArr = [...newStr];
@@ -18,6 +19,9 @@ const palindromes = function (myStr) {
         }
     }
     return false;
+
+    // in solution, cleans string to only alphanumeric values
+    // reverses string and compares if forward & reversed string are the same
 
 };
 

@@ -7,27 +7,27 @@ const subtract = function(a, b) {
 };
 
 const sum = function(nums) {
-	return nums.reduce((total, num) => total + num
+	return nums.reduce((total, cur) => total + cur
   , 0)
 };
 
 const multiply = function(nums) {
-  return nums.reduce((total, num) => total * num
+  return nums.reduce((product, cur) => product * cur
   , 1)
 };
 
 const power = function(base, exp) {
-  return Math.pow(base, exp);
+  return base ** exp;
 	
 };
 
 const factorial = function(num) {
-  let answer = 1;
-  for (let i = 1; i <= num; i++) {
-    answer = answer * i;
+  let product = 1;
+  for (let i = n; i > 0; i--) {
+    product *= i;
   }
 
-  return answer;
+  return product;
 	
 };
 
